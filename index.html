@@ -11,29 +11,16 @@
   <meta name="keywords" content="Rohan Kavali, Portfolio, Web Developer, Software Engineer, Atlanta, HTML, CSS, JavaScript, React, Node.js, Python" />
   <meta name="author" content="Rohan Kavali" />
 
-  <!-- ====== OPEN GRAPH / SOCIAL PREVIEW ====== -->
-  <meta property="og:title" content="Rohan Kavali | Portfolio" />
-  <meta property="og:description" content="Software Developer passionate about building responsive, dynamic web apps using modern technologies." />
-  <meta property="og:image" content="https://Scoobydoo116.github.io/preview.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://Scoobydoo116.github.io/" />
-
-  <!-- ====== TWITTER CARD ====== -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Rohan Kavali | Portfolio" />
-  <meta name="twitter:description" content="Full Stack Developer & Machine Learning Enthusiast | Rohan Kavali" />
-  <meta name="twitter:image" content="https://Scoobydoo116.github.io/preview.png" />
+  <!-- ====== AOS Animation Library ====== -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- ====== FAVICON ====== -->
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <!-- ====== STYLESHEET ====== -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- ====== PERFORMANCE OPTIMIZATION ====== -->
-  <link rel="preload" href="style.css" as="style" />
-  <link rel="preload" href="script.js" as="script" />
 </head>
+
 <body>
 
   <!-- ====== NAVBAR ====== -->
@@ -55,7 +42,7 @@
   <section id="home" class="hero" data-aos="fade-up">
     <div class="hero-content">
       <div class="hero-text">
-        <h1>Hi, I'm <span id="typing"></span></h1>
+        <h1>Hi, I'm <span id="typing">Rohan Kavali</span></h1>
         <p>A passionate web developer and designer based in Atlanta, GA.</p>
         <a href="#projects" class="btn">View My Work</a>
       </div>
@@ -94,19 +81,37 @@
     </div>
   </section>
 
-  <!-- ====== PROJECTS SECTION ====== -->
-  <section id="projects" class="projects" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="project-grid">
+  <!-- ====== MODERN PROJECTS SECTION ====== -->
+  <section id="projects" class="modern-projects" data-aos="fade-up">
+    <div class="projects-header">
+      <h4 class="section-subtitle">portfolio</h4>
+      <h2 class="section-title">RECENT PROJECTS<span class="dot">.</span></h2>
+      <p class="section-desc">Explore my recent projects and see my work in action.</p>
+    </div>
+
+    <div class="project-gallery">
       <div class="project-card" data-aos="fade-right">
-        <h3>RAG Chatbot</h3>
-        <p>Built a Retrieval-Augmented Generation (RAG) chatbot integrating an LLM with a Pokémon dataset to enable contextual responses using FAISS-based semantic search.</p>
-        <a href="https://github.com/Scoobydoo116" target="_blank">View on GitHub</a>
+        <img src="project1.jpg" alt="RAG Chatbot Project">
+        <div class="project-info">
+          <h3>RAG Chatbot</h3>
+          <p>Retrieval-Augmented Generation chatbot integrating FAISS and LLM for contextual question answering.</p>
+        </div>
       </div>
+
+      <div class="project-card" data-aos="fade-up">
+        <img src="project2.jpg" alt="Portfolio Website">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>Designed and developed this responsive personal website using HTML, CSS, and JavaScript with animations and dark mode.</p>
+        </div>
+      </div>
+
       <div class="project-card" data-aos="fade-left">
-        <h3>Portfolio Website</h3>
-        <p>Designed and developed this personal portfolio using HTML, CSS, and JavaScript — fully responsive with dark mode and animations.</p>
-        <a href="https://Scoobydoo116.github.io" target="_blank">View Live</a>
+        <img src="project3.jpg" alt="Data Visualization Dashboard">
+        <div class="project-info">
+          <h3>Data Visualization Dashboard</h3>
+          <p>Built an interactive analytics dashboard using Python, Flask, and Chart.js to display real-time insights.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -134,26 +139,46 @@
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit" class="btn">Send Message</button>
     </form>
-
-    <div class="resume-social">
-      <a href="ROHAN_INTERN_RESUME.pdf" class="btn" download>📄 Download Resume</a>
-      <div class="social-icons">
-        <a href="https://github.com/Scoobydoo116" target="_blank" title="GitHub">🐙</a>
-        <a href="https://www.linkedin.com/in/rohan-kavali-013820236/" target="_blank" title="LinkedIn">💼</a>
-        <a href="https://www.instagram.com/" target="_blank" title="Instagram">📸</a>
-      </div>
-    </div>
   </section>
 
-  <!-- ====== SCROLL TO TOP BUTTON ====== -->
-  <button id="scrollTopBtn">↑</button>
+  <!-- ====== MODERN FOOTER ====== -->
+  <footer class="modern-footer" data-aos="fade-up">
+    <div class="footer-container">
+      <div class="footer-socials">
+        <a href="https://github.com/Scoobydoo116" target="_blank">🐙</a>
+        <a href="https://www.linkedin.com/in/rohan-kavali-013820236/" target="_blank">💼</a>
+      </div>
 
-  <!-- ====== FOOTER ====== -->
-  <footer>
-    <p>© 2025 Rohan Kavali | Built with ❤️ using HTML, CSS & JS</p>
+      <h2 class="footer-email">hello@rohankavali.com</h2>
+
+      <ul class="footer-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#about">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </footer>
 
-  <!-- ====== JAVASCRIPT ====== -->
-  <script src="script.js"></script>
+  <!-- ====== SCRIPTS ====== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+  <script>
+    const cards = document.querySelectorAll('.project-card');
+    window.addEventListener('scroll', () => {
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          card.style.transform = `translateY(${rect.top * 0.05}px)`;
+        }
+      });
+    });
+  </script>
 </body>
 </html>
