@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rohan Kavali | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- ====== SEO META TAGS ====== -->
+  <meta name="description" content="Portfolio of Rohan Kavali — Software Developer skilled in Web Development, React, Node.js, Data Science, and Machine Learning." />
+  <meta name="keywords" content="Rohan Kavali, Portfolio, Web Developer, Software Engineer, Atlanta, HTML, CSS, JavaScript, React, Node.js, Python" />
+  <meta name="author" content="Rohan Kavali" />
+
+  <!-- ====== OPEN GRAPH / SOCIAL PREVIEW ====== -->
+  <meta property="og:title" content="Rohan Kavali | Portfolio" />
+  <meta property="og:description" content="Software Developer passionate about building responsive, dynamic web apps using modern technologies." />
+  <meta property="og:image" content="https://Scoobydoo116.github.io/preview.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://Scoobydoo116.github.io/" />
+
+  <!-- ====== TWITTER CARD ====== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rohan Kavali | Portfolio" />
+  <meta name="twitter:description" content="Full Stack Developer & Machine Learning Enthusiast | Rohan Kavali" />
+  <meta name="twitter:image" content="https://Scoobydoo116.github.io/preview.png" />
+
+  <!-- ====== FAVICON ====== -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- ====== STYLESHEET ====== -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ====== PERFORMANCE OPTIMIZATION ====== -->
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="preload" href="script.js" as="script" />
 </head>
 <body>
 
-  <!-- ====== HEADER ====== -->
+  <!-- ====== NAVBAR ====== -->
   <header>
     <nav class="navbar">
       <h2 class="logo">Rohan Kavali</h2>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -24,19 +53,46 @@
 
   <!-- ====== HERO SECTION ====== -->
   <section id="home" class="hero" data-aos="fade-up">
-  <div class="hero-content">
-    <div class="hero-text">
-      <h1>Hi, I'm <span id="typing"></span></h1>
-      <p>A passionate web developer and designer based in Atlanta, GA.</p>
-      <a href="#projects" class="btn">View My Work</a>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hi, I'm <span id="typing"></span></h1>
+        <p>A passionate web developer and designer based in Atlanta, GA.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <div class="hero-image">
+        <img src="Rohan.profile.jpg.jpg" alt="Rohan Kavali" loading="lazy">
+      </div>
     </div>
+  </section>
 
-    <div class="hero-image">
-      <img src="Rohan.profile.jpg.jpg" alt="Rohan Kavali" loading="lazy">
+  <!-- ====== ABOUT SECTION ====== -->
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I’m <strong>Rohan Kavali</strong>, a motivated Software Intern with hands-on experience in 
+          <strong>Full Stack Web Development</strong> and <strong>Applied Machine Learning</strong>.  
+          I’m passionate about creating responsive, user-friendly web applications and data-driven solutions 
+          that optimize performance and improve user experience.
+        </p>
+        <p>
+          During my internships at <strong>Eazy Bytes Software Sol</strong> and <strong>Spoors Pvt. Ltd</strong>, 
+          I worked on building and maintaining web applications using React, Node.js, and MongoDB, designed RESTful APIs, 
+          and collaborated with cross-functional teams using Agile methodologies.
+        </p>
+        <p>
+          I’m currently pursuing a <strong>B.S. in Computer Science</strong> at <strong>Piedmont University</strong> 
+          with a focus on Information, Data Science, and Machine Learning — where I’ve earned the <strong>Dean’s List Award</strong> 
+          for academic excellence.
+        </p>
+        <a href="#projects" class="btn">View My Projects</a>
+      </div>
+      <div class="about-image">
+        <img src="Rohan.profile.jpg.jpg" alt="Rohan Kavali portrait" loading="lazy">
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- ====== PROJECTS SECTION ====== -->
   <section id="projects" class="projects" data-aos="fade-up">
@@ -44,13 +100,13 @@
     <div class="project-grid">
       <div class="project-card" data-aos="fade-right">
         <h3>RAG Chatbot</h3>
-        <p>Designed and implemented a Retrieval-Augmented Generation (RAG) pipeline integrating an LLM with a Pokémon dataset to create an intelligent chatbot.</p>
+        <p>Built a Retrieval-Augmented Generation (RAG) chatbot integrating an LLM with a Pokémon dataset to enable contextual responses using FAISS-based semantic search.</p>
         <a href="https://github.com/Scoobydoo116" target="_blank">View on GitHub</a>
       </div>
       <div class="project-card" data-aos="fade-left">
         <h3>Portfolio Website</h3>
-        <p>Created a responsive portfolio using HTML, CSS, and JavaScript to showcase my skills and projects with interactive animations.</p>
-        <a href="https://scoobydoo116.github.io" target="_blank">View Live</a>
+        <p>Designed and developed this personal portfolio using HTML, CSS, and JavaScript — fully responsive with dark mode and animations.</p>
+        <a href="https://Scoobydoo116.github.io" target="_blank">View Live</a>
       </div>
     </div>
   </section>
@@ -97,6 +153,7 @@
     <p>© 2025 Rohan Kavali | Built with ❤️ using HTML, CSS & JS</p>
   </footer>
 
+  <!-- ====== JAVASCRIPT ====== -->
   <script src="script.js"></script>
 </body>
 </html>
