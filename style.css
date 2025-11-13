@@ -131,3 +131,67 @@ footer {
         font-size: 2rem;
     }
 }
+
+
+/* ====== DARK MODE ====== */
+body.dark {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+body.dark header,
+body.dark footer {
+    background-color: #1f1f1f;
+}
+body.dark .project-card,
+body.dark .skills li {
+    background-color: #222;
+    color: #f4f4f4;
+}
+#theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ====== SCROLL TO TOP ====== */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: opacity 0.3s;
+}
+#scrollTopBtn:hover {
+    background-color: #003d80;
+}
+
+/* ====== TYPING ANIMATION ====== */
+#typing {
+    border-right: 2px solid #0056b3;
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* ====== AOS ANIMATIONS ====== */
+[data-aos] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
